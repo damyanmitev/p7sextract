@@ -179,13 +179,6 @@ func (mw *MyMainWindow) onDropFiles(files []string) {
 
 func (mw *MyMainWindow) initP7SFileName(p7sFileName string) {
 
-	//if path.Ext(p7sFileName) != p7sExt {
-	//	walk.MsgBox(nil, programTitle,
-	//		"Грешен формат на файла.\r\nОчаква се файл с разширение .p7s",
-	//		walk.MsgBoxOK | walk.MsgBoxIconWarning)
-	//	return
-	//}
-
 	if filepath.Ext(p7sFileName) == p7sExt {
 		mw.prevP7SFilePath = p7sFileName
 	} else {
@@ -313,11 +306,6 @@ func (mw *MyMainWindow) extractP7SData(p7sFileContents []byte) (data []byte, err
 	if len(data) == 0 {
 		return nil, fmt.Errorf("p7s файлът не съдържа данни")
 	}
-
-	//certificates, err := signedData.GetCertificates()
-	//if err != nil {
-	//	return err
-	//}
 
 	return data, nil
 }
