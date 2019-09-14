@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2019. Dr. Damyan Mitev
+ */
+
 //go:generate goversioninfo
 
 package main
