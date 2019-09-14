@@ -279,7 +279,7 @@ func (mw *MyMainWindow) extractBtn_OnClicked() {
 
 	walk.MsgBox(mw, programTitle,
 		"Извличането завърши успешно",
-		walk.MsgBoxOK|walk.MsgBoxIconExclamation)
+		walk.MsgBoxOK|walk.MsgBoxIconInformation)
 }
 
 func (mw *MyMainWindow) readP7SContents(p7sFileName string) (p7sContents []byte, err error) {
