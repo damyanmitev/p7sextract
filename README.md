@@ -1,6 +1,6 @@
 # p7sExtract 
 
-####Extracts data from .p7s file
+###Extracts data from .p7s file
 
 Users select .p7s file, whose data is to be extracted in one of three ways:
 - opening a .p7s file with file chooser dialog box
